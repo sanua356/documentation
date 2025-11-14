@@ -1,0 +1,59 @@
+# Feature-Sliced Design
+
+
+## documentation
+
+- [예제](/examples.md): Feature‑Sliced Design으로 제작된 웹사이트 모음
+- [🧭 내비게이션](/nav.md): Feature-Sliced Design Navigation help page
+- [Feature‑Sliced Design 버전](/versions.md): Feature-Sliced Design Versions page listing all documented site versions
+- [💫 Community](/community.md): Community resources, additional materials
+- [Team](/community/team.md): Core-team
+- [Alternatives](/docs/about/alternatives.md): History of architecture approaches
+- [Mission](/docs/about/mission.md): 이 문서는 우리가 방법론을 개발할 때 따르는 목표와 적용 가능성의 한계를 설명합니다.
+- [Motivation](/docs/about/motivation.md): Feature-Sliced Design은 여러 개발자들의 연구와 경험을 결합하여
+- [Promote in company](/docs/about/promote/for-company.md): Do the project and the company need a methodology?
+- [Promote in team](/docs/about/promote/for-team.md): - Onboard newcomers
+- [Integration aspects](/docs/about/promote/integration.md): Summary
+- [Partial Application](/docs/about/promote/partial-application.md): How to partially apply the methodology? Does it make sense? What if I ignore it?
+- [Abstractions](/docs/about/understanding/abstractions.md): The law of leaky abstractions
+- [About architecture](/docs/about/understanding/architecture.md): 문제점들
+- [Knowledge types](/docs/about/understanding/knowledge-types.md): 소프트웨어 프로젝트를 개발할 때 다루게 되는 지식은 크게 세 가지로 나눌 수 있습니다:
+- [Naming](/docs/about/understanding/naming.md): 개발자들은 각자의 경험과 관점에 따라 같은 대상을 다르게 부르는 경우가 많습니다. 이는 팀 내에서 혼동을 유발할 수 있습니다. 예를 들어:
+- [Needs driven](/docs/about/understanding/needs-driven.md): 새로운 Feature의 목표가 불분명하거나 작업 정의가 모호한가요? **이 방법론의 핵심은 작업과 목표를 명확히 정의하는 데 있습니다.**
+- [Signals of architecture](/docs/about/understanding/signals.md): If there is a limitation on the part of the architecture, then there are obvious reasons for this, and consequences if they are ignored
+- [Branding Guidelines](/docs/branding.md): FSD's visual identity is based on its core-concepts: Layered, Sliced self-contained parts, Parts & Compose, Segmented.
+- [Decomposition cheatsheet](/docs/get-started/cheatsheet.md): Use this as a quick reference when you're deciding how to decompose your UI. PDF versions are also available below, so you can print it out and keep one under your pillow.
+- [FAQ](/docs/get-started/faq.md): 질문은 언제든 Telegram, Discord, GitHub Discussions에서 남겨 주세요.
+- [개요](/docs/get-started/overview.md): Feature-Sliced Design (FSD) 는 프론트엔드 애플리케이션 구조를 위한 아키텍처 방법론입니다.
+- [튜토리얼](/docs/get-started/tutorial.md): Part 1. 설계
+- [Handling API Requests](/docs/guides/examples/api-requests.md): Shared API Requests
+- [Authentication](/docs/guides/examples/auth.md): 일반적으로 인증(Authentication) 플로우는 세 단계로 구성됩니다.
+- [Autocomplete](/docs/guides/examples/autocompleted.md): About decomposition by layers
+- [Browser API](/docs/guides/examples/browser-api.md): About working with the Browser API: localStorage, audio Api, bluetooth API, etc.
+- [CMS](/docs/guides/examples/cms.md): Features may be different
+- [Feedback](/docs/guides/examples/feedback.md): Errors, Alerts, Notifications, ...
+- [i18n](/docs/guides/examples/i18n.md): Where to place it? How to work with this?
+- [Metric](/docs/guides/examples/metric.md): About ways to initialize metrics in the application
+- [Monorepositories](/docs/guides/examples/monorepo.md): About applicability for mono repositories, about bff, about microapps
+- [Page layouts](/docs/guides/examples/page-layout.md): 여러 페이지에서 동일한 공통 layout(header, sidebar, footer) 을 사용하고,
+- [Desktop/Touch platforms](/docs/guides/examples/platforms.md): About the application of the methodology for desktop/touch
+- [SSR](/docs/guides/examples/ssr.md): About the implementation of SSR using the methodology
+- [Theme](/docs/guides/examples/theme.md): Where should I put my work with the theme and palette?
+- [Types](/docs/guides/examples/types.md): 이 가이드는 TypeScript 같은 정적 타입 언어에서 데이터를 정의·활용하는 방법과, FSD 구조 내에서 타입을 어디에 배치할지 설명합니다.
+- [White Labels](/docs/guides/examples/white-labels.md): Figma, brand uikit, templates, adaptability to brands
+- [Cross-import](/docs/guides/issues/cross-imports.md): Cross-import는 Layer나 추상화가 원래의 책임 범위를 넘어설 때 발생합니다. 방법론에서는 이러한 Cross-import를 해결하기 위한 별도의 Layer를 정의합니다.
+- [Desegmentation](/docs/guides/issues/desegmented.md): 상황
+- [Routing](/docs/guides/issues/routes.md): 상황
+- [기존 아키텍처에서 FSD로의 마이그레이션](/docs/guides/migration/from-custom.md): 이 가이드는 기존 아키텍처를 Feature-Sliced Design(FSD) 으로 단계별 전환하는 방법을 설명합니다.
+- [v1 -> v2 마이그레이션 가이드](/docs/guides/migration/from-v1.md): v2 도입 배경
+- [v2.0 -> v2.1 마이그레이션 가이드](/docs/guides/migration/from-v2-0.md): v2.1의 핵심 변화는 Page 중심(Page-First) 접근 방식을 통한 인터페이스 구조화입니다.
+- [Electron와 함께 사용하기](/docs/guides/tech/with-electron.md): Electron 애플리케이션은 역할이 다른 여러 프로세스(Main, Renderer, Preload)로 구성됩니다.
+- [NextJS와 함께 사용하기](/docs/guides/tech/with-nextjs.md): NextJS 프로젝트에도 FSD 아키텍처를 적용할 수 있지만, 구조적 차이로 두 가지 충돌이 발생합니다.
+- [NuxtJS와 함께 사용하기](/docs/guides/tech/with-nuxtjs.md): NuxtJS 프로젝트에 FSD(Feature-Sliced Design)를 도입할 때는 기본 구조와 FSD 원칙 간에 다음과 같은 차이를 고려해야 합니다:
+- [React Query와 함께 사용하기](/docs/guides/tech/with-react-query.md): Query Key 배치 문제
+- [SvelteKit와 함께 사용하기](/docs/guides/tech/with-sveltekit.md): SvelteKit 프로젝트에 FSD(Feature-Sliced Design)를 적용할 때는 다음 차이를 유의하세요:
+- [Docs for LLMs](/docs/llms.md): This page provides links and guidance for LLM crawlers.
+- [Layer](/docs/reference/layers.md): Layer는 Feature-Sliced Design에서 코드를 구분하는 가장 큰 범위입니다.
+- [Public API](/docs/reference/public-api.md): Public API는 Slice 기능을 외부에서 사용할 수 있는 공식 경로입니다.
+- [Slices and segments](/docs/reference/slices-segments.md): Slice
+- [Feature-Sliced Design](/index.md): Architectural methodology for frontend projects
